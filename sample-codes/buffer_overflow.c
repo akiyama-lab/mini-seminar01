@@ -13,7 +13,7 @@ int main() {
   buf2 = (char *)malloc(sizeof(char) * BUF_SIZE);
   printf("buf2 address: %p\n", buf2);
   
-  // buf1 に "0123456789\0" をコピー
+  // buf1 に "01234567890123456789\0" をコピー
   strncpy(buf1, "01234567890123456789", 21);
   
   // buf1, buf2 の状態は？
